@@ -40,18 +40,43 @@ document.addEventListener("DOMContentLoaded", function () {
     "you_are_picked_to_be_here",
     "you_are_so_qualified",
     "you_are_a_strong_and_capable_person",
+    "trust_yourself_to_make_good_decisions",
+    "you_are_worthy_of_your_achievements",
+    "you_have_the_power_to_create_change",
+    "you_are_as_good_as_people_say_you_are",
+    "you_have_the_power_to_create_the_change",
+    "you_are_allowed_to_make_mistakes",
+    "you_are_a_good_learner",
+    "you_accomplishments_are_valid",
+    "you_learn_from_your_mistakes",
+    "your_abilities_are_imperfectly_perfect",
+    "to_make_small_steps_toward_big_goals_is_progress",
+    "you_are_exactly_where_you_need_to_be_today",
+    "",
+    "",
+    "",
+
+
+
   ];
 
   const imagesArr = [
     "https://static01.nyt.com/images/2013/06/16/movies/20130616_MONSTER-slide-UCE2/20130616_MONSTER-slide-UCE2-master1050.jpg?",
-    "https://bpic.51yuansu.com/pic3/cover/01/90/73/59824ca7bfb3f_610.jpg?"
+    "https://bpic.51yuansu.com/pic3/cover/01/90/73/59824ca7bfb3f_610.jpg?",
+    "https://bpic.51yuansu.com/pic3/cover/02/89/62/5ab7a3da63763_610.jpg?",
+    "https://cdn.pixabay.com/photo/2017/12/26/16/58/sketch-3040895_1280.png?",
+    "https://cdn.pixabay.com/photo/2021/02/08/16/03/dinosaur-5995333_1280.png?",
+    "https://cdn.pixabay.com/photo/2019/06/17/02/01/monster-4278973_1280.png?",
+    "https://cdn.pixabay.com/photo/2015/04/15/20/21/cute-724507_1280.jpg?",
+    "https://img.freepik.com/free-vector/happy-hairy-purple-alien-monster-cartoon-character_1308-157326.jpg?",
+    "https://img.freepik.com/free-vector/terrified-orange-alien-monsters-cartoon-character-with-horns_1308-158237.jpg?"
   ]
 
   const basicUrl = "https://api.memegen.link/images/custom/_/";
   let memText = memTextArr[Math.floor(Math.random() * memTextArr.length)];
   let imageUrl = imagesArr[Math.floor(Math.random() * imagesArr.length)]
   const imageSize = `height=450&width=800`;
-  const assembledUrl = `${basicUrl}${memText}.jpg?background=${imageUrl}${imageSize}`;
+  const assembledUrl = `${basicUrl}${memText}${imageUrl.slice(-5)}background=${imageUrl}${imageSize}`;
   console.log(assembledUrl);
 
   // feature 1: link meme generator
