@@ -1,0 +1,15 @@
+{
+    "name": "Imposter Syndrome Fighter",
+    "version": "1.0",
+    "description": "A daily reminder to beat Imposter Syndrome monster",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Catch me!",
+        "default_icon": "imposter-monster.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["activeTab", "storage"]
+}
